@@ -1,6 +1,8 @@
 angular.module('spServicesApp', [
   'ngRoute',
-  'spServicesApp.controllers'
+  'ngSanitize',
+  'spServicesApp.controllers',
+  'spServicesApp.filters'
 ]).
   config(['$routeProvider', function($routeProvider) {
 

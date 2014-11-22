@@ -1,23 +1,25 @@
-<div class="col-lg-4" ng-repeat="response in responses">
+<h1>Services in the category: {{title}}</h1>
+<div ng-repeat="response in responses">
+  <div ng-class="($index % 3 == 0 && $index != 0) && 'row' || ''">
+<div class="col-lg-4">
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <i class="mdi-social-mood mdi-material-indigo" style="font-size: 40pt;float:right;"></i>
-      <h2>{{response.title}}</h2></div>
+      <div class="panel-heading">
+        <i class="mdi-social-mood mdi-material-indigo" style="font-size: 40pt;float:right;"></i>
+        <h2>{{response.title}}</h2></div>
       <div class="panel-body">
-        <div class="col-md-2 col-md-offset-3">
-          <img ng-src="{{response.image}}">
-          <div ng-bind-html="response.info">
-          </div>
+          <img ng-src="{{response.image}}" width="300">
+          <p ng-bind-html="response.info | limitTo: 256">
+          </p>
+      </div>
         <div class="panel-footer mdi-material-lightgreen">
           <div class="footer-button" ng-click="changePage(response.page)">
             <span class="footer-button-text">
 
-<a href="javascript:void(0)" class="btn btn-default btn-fab btn-raised mdi-action-info-outline"  style="background-color:#757575; color:white;"></a>
+<a href="javascript:void(0)" class="btn btn-default btn-fab btn-raised mdi-navigation-arrow-forward"  style="background-color:#757575; color:white;"></a>
 
             </span>
           </div>
         </div>
-      
+  </div>
   </div>
 </div>  
-
