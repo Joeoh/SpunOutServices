@@ -3,6 +3,6 @@ angular.module('spServicesApp', [
   'spServicesApp.controllers'
 ]).
   config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/', { templateUrl: 'partials/services.html', controller: 'ServicesCtrl' });
+    $routeProvider.when('/', { templateUrl: 'partials/main.html', controller: 'ServicesCtrl' });
     $routeProvider.otherwise({ redirectTo: '/' });
 }]);
