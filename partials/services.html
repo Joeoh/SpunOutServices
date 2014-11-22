@@ -1,28 +1,23 @@
-<div class="col-lg-4">
-	<div class="panel panel-default">
-	    <div class="panel-heading">
-	    	<i class="mdi-social-mood mdi-material-indigo" style="font-size: 40pt;float:right;"></i>
-	    	<h2>Aware</h2></div>
-	    <div class="panel-body">
-	    	<div class="col-md-2 col-md-offset-3">
-		    	<img src="http://spunout.ie/images/services/Aware.png">
-	    	<div>
-	        <p>
-	        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	        </p>
-	    </div>
+<div class="col-lg-4" ng-repeat="response in responses">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <i class="mdi-social-mood mdi-material-indigo" style="font-size: 40pt;float:right;"></i>
+      <h2>{{response.title}}</h2></div>
+      <div class="panel-body">
+        <div class="col-md-2 col-md-offset-3">
+          <img ng-src="{{response.image}}">
+          <div ng-bind-html="response.info">
+          </div>
         <div class="panel-footer mdi-material-lightgreen">
-        	<div class="footer-button" onclick="window.location.href='http://www.google.com/'">
-        		<span class="footer-button-text">
+          <div class="footer-button" ng-click="changePage(response.page)">
+            <span class="footer-button-text">
 
 <a href="javascript:void(0)" class="btn btn-default btn-fab btn-raised mdi-action-info-outline"  style="background-color:#757575; color:white;"></a>
 
-        		</span>
-        	</div>
+            </span>
+          </div>
         </div>
-	    
-	</div>
-</div>	
+      
+  </div>
+</div>  
 
