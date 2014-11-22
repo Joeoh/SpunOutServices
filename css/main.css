@@ -6,15 +6,39 @@
 
 
 
+.panel-heading {
+	background-color: #F1F8E9;
+}
+
+.panel-footer {
+	background-color: #8BC34A;
+	padding: 0px;
+}
 
 
+.footer-button {
+	height: 50px;
 
+}
 
+.button-text{
+	text-align: center;
+	margin-left: 115px;
+	font-size: 18pt;
+	color: #F1F8E9;
+}
 
+.footer-button:hover {
+	cursor: pointer;
+}
 
-
-
-
+.footer-button-text {
+	color: #F1F8E9;
+	font-size: 31px;
+	position: relative;
+	top: -16px;
+	left: 41%;
+}
 
 
 

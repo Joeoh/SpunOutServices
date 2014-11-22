@@ -17,8 +17,10 @@
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link href="/css/ripples.css" rel="stylesheet">
+        <link href="/css/material-wfont.css" rel="stylesheet">
+        <link href="/css/snackbar.min.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -28,7 +30,19 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container">
-            <div class="jumbotron"><h1>Spunout Services</h1></div>
+            <div class="jumbotron">
+            <img class="SpunOut_Logo" src="/img/SpunOut_ie.jpg" alt="SpunOut - Ireland's Youth Website" style="height:110px;">
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="well well-lg" style="padding:10px;">
+                        <input type="text" style="width:100%; border:0px; " placeholder="Something else?"/>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+            </div>
             <div ng-view></div>
         </div>
 
